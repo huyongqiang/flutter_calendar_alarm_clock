@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_calendar/flutter_custom_calendar.dart';
+
+import 'DefaultStylePage.dart';
+import 'calendar.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +24,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: DefaultStylePage(title: "defaul style",),
+//      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
