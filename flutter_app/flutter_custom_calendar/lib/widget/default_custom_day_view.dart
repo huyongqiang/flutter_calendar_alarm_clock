@@ -73,7 +73,7 @@ void defaultDrawNormal(DateModel dateModel, Canvas canvas, Size size) {
   //顶部的文字
   TextPainter dayTextPainter = new TextPainter()
     ..text =
-        TextSpan(text: dateModel.day.toString(), style: currentMonthTextStyle)
+        TextSpan(text: dateModel.day.toString(), style:dateModel.isWeekend? WeekendTextStyle:currentMonthTextStyle)
     ..textDirection = TextDirection.ltr
     ..textAlign = TextAlign.center;
 
@@ -108,7 +108,7 @@ void defaultDrawSelected(DateModel dateModel, Canvas canvas, Size size) {
   //顶部的文字
   TextPainter dayTextPainter = new TextPainter()
     ..text =
-        TextSpan(text: dateModel.day.toString(), style: currentMonthTextStyle)
+        TextSpan(text: dateModel.day.toString(), style: dateModel.isWeekend? WeekendTextStyle:currentMonthTextStyle)
     ..textDirection = TextDirection.ltr
     ..textAlign = TextAlign.center;
 
